@@ -59,9 +59,21 @@ PLUGINS_CONFIG = {
             # Add more as needed
             },
         'MANUFACTURER_NAME_SLUGS': ['cisco', 'palo-alto'],
-        'SKIP_DISCOVERY_TAG_SLUG': 'discovery-exempt',  # Tag on IP to skip automation
+        'SKIP_DISCOVERY_TAG_SLUG': 'cspc-exempt',  # Tag on IP to skip automation
         'NETWORK_MGMT_TAG_SLUG': 'ipam-network-device-mgmt',
-        'DEFAULT_VRF_NAME': 'VRF-DEFAULT',  # Default VRF name
+        'DEFAULT_VRF_NAME': 'VRF-CORP',  # Default VRF name
+        # SW Calculator Options
+        'SOFTWARE_VERSION_MGMT': 'software_version_mgmt',
+        'CF_SOFTWARE_VERSION': 'software_version',
+        'CF_CURRENCY_STATUS': 'software_currency_status',
+        'CF_VERSION_TARGET': 'software_version_target',
+        'CF_CURRENCY_NOTES': 'software_currency_notes',
+        # The Choices for CurrencyStatus
+        'TARGET_ACTIVE': 'target_active_version',
+        'ACCEPTED_ACTIVE': 'accepted_active_version',
+        'EXEMPTED': 'exempted',
+        'UPGRADE_REQUIRED': 'upgrade_required',
+        'UPGRADE_REQUIRED_RETIRED': 'upgrade_required_retired',
     },
 }
 ```
