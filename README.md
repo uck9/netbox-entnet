@@ -59,9 +59,9 @@ PLUGINS_CONFIG = {
             # Add more as needed
             },
         'MANUFACTURER_NAME_SLUGS': ['cisco', 'palo-alto'],
-        'SKIP_DISCOVERY_TAG_SLUG': 'cspc-exempt',  # Tag on IP to skip automation
+        'SKIP_DISCOVERY_TAG_SLUG': 'discovery-exempt',  # Tag on IP to skip automation
         'NETWORK_MGMT_TAG_SLUG': 'ipam-network-device-mgmt',
-        'DEFAULT_VRF_NAME': 'VRF-CORP',  # Default VRF name
+        'DEFAULT_VRF_NAME': 'VRF-DEFAULT',  # Default VRF name
         # SW Calculator Options
         'SOFTWARE_VERSION_MGMT': 'software_version_mgmt',
         'CF_SOFTWARE_VERSION': 'software_version',
